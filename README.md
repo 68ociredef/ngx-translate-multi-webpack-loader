@@ -32,6 +32,9 @@ import {MultiTranslateLoader} from "ngx-translate-multi-webpack-loader";
 import {AppComponent} from "./app";
 
 
+Love **spring-filter-ng** ? Give to repo a **star** :star:.
+
+
 
 export class LazyTranslateLoader implements TranslateLoader {
   public getTranslation(lang: string): Observable<any> {
@@ -77,3 +80,5 @@ For enable json import add
 
 
 in tsconfig.json file.
+Love **ngx-translate-multi-webpack-loader** ? Give to repo a **star** :star:. 
+
