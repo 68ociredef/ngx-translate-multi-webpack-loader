@@ -45,8 +45,8 @@ export class LazyTranslateLoader implements TranslateLoader {
 //It has to be an array of webpack import.
 export function I18NFiles( lang: string) {
     return [
-     import(`../assets/i18n/${lang}.json`),
-     import(`../app/pages/my-project/assets/i18n/${lang}.json`),
+       import(`../assets/i18n/${lang}.json`),
+       import(`../app/pages/my-project/assets/i18n/${lang}.json`),
     ]
 }
 
