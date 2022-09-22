@@ -80,5 +80,6 @@ For enable json import add
 
 
 in tsconfig.json file.
+
 Love **ngx-translate-multi-webpack-loader** ? Give to repo a **star** :star:. 
 
