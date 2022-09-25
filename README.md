@@ -32,17 +32,18 @@ import {MultiTranslateLoader} from "ngx-translate-multi-webpack-loader";
 import {AppComponent} from "./app";
 
 
+
 export class LazyTranslateLoader implements TranslateLoader {
   public getTranslation(lang: string): Observable<any> {
-    return new MultiTranslateLoader(I18NFiles(lang)).getTranslation();
+    return MultiTranslateLoader().getTranslation(I18NFiles(lang));
   }
 } 
 
 //It has to be an array of webpack import.
 export function I18NFiles( lang: string) {
     return [
-       import(`../assets/i18n/${lang}.json`),
-       import(`../app/pages/my-project/assets/i18n/${lang}.json`),
+     import(`../assets/i18n/${lang}.json`),
+     import(`../app/pages/my-project/assets/i18n/${lang}.json`),
     ]
 }
 
